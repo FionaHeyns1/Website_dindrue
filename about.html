@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din drue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon_io (1)/favicon-16x16.png" />
+  </head>
+
+  <body class="about_baggrund">
+    <header>
+      <div class="hoved">
+        <div class="menu-btn" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="overskrift_2about">
+          <h1><a href="index.html"> DIN DRUE</a></h1>
+        </div>
+        <div class="about">
+          <p><a href="about.html"> About</a></p>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Forside</a>
+        <a href="find_din_vin.html">Find din vin</a>
+        <a href="about.html">Om os</a>
+        <a href="vin_til_warm.html">Vin til warm</a>
+        <a href="netto.html">Netto</a>
+        <a href="rema.html">Rema</a>
+      </nav>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <main>
+      <section class="aboutside_grid1">
+        <h4 class="underoverskrift_about">Tanken bag det hele</h4>
+        <div class="about_p1">
+          <p>
+            Forestil dig en dejlig sommer aften, du har været nede i rema/netto
+            og handle ind fordi du enten har planlagt:
+          </p>
+          <p>A. Grill-aften på altanen/terassen.</p>
+          <p>B. Mødtes med en god ven og nu sidder i en park på et tæppe.</p>
+          <p>
+            C. Du er lige trådt ind i lejligheden til warm, hvor musikken brager
+            ud af højtaleren i baggrunden.
+          </p>
+          <p>
+            Uanset, hvilken situation du nu befinder dig i, så trækker du en
+            flaskevin op af tasken.
+          </p>
+        </div>
+
+        <div class="about_p2">
+          <p>
+            Du får åbnet flasken og opdager, at det endnu en gang er en flaske
+            "rævepis" du er kommet afsted med. Så lad os tage et hurtigt kig
+            tilbage, til da du stod i supermarkedet, for havde det bare været et
+            sted, hvor man kunne få vejledning. Det er her "din drue" kommer i
+            spil. Hos os finder du beskrivelse af smag og for at gøre der endnu
+            nemmere er der hver uge nye anbefalinger til, hvilken vin du skal
+            købe! Selv tak.
+          </p>
+        </div>
+
+        <div class="about_p3">
+          <img
+            src="img/vin_reol.jpeg"
+            alt="vin og vinglas"
+            class="sort_hvid_vin"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="navn_footer">DIN DRUE</div>
+        <div class="virksomhed">VIRKSOMHED</div>
+        <div class="hjælp">HJÆLP</div>
+        <div class="tekst_footer">
+          Din drue er både til dig, som gerne vil nyde et godt glas vin eller
+          bare få en hurtig skid på før, du rammer floor. Her finder du
+          anbefalinger og information om diverse vin i Rema og Netto.
+        </div>
+        <div class="liste1">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>About</li>
+            <li>Features</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div class="liste2">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>Costumer support</li>
+            <li>Delivery details</li>
+            <li>Terms and conditions</li>
+            <li>Privacy politics</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

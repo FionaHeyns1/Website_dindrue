@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din drue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="favicon_io (1)/favicon-16x16.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="rema_baggrund">
+    <header>
+      <div class="hoved">
+        <div class="menu-btn" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="overskrift">
+          <h1><a href="index.html"> DIN DRUE</a></h1>
+        </div>
+        <div class="about">
+          <p><a href="about.html"> About</a></p>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Forside</a>
+        <a href="find_din_vin.html">Find din vin</a>
+        <a href="about.html">Om os</a>
+        <a href="vin_til_warm.html">Vin til warm</a>
+        <a href="netto.html">Netto</a>
+        <a href="rema.html">Rema</a>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("mobileMenu");
+          menu.classList.toggle("show");
+        }
+      </script>
+    </header>
+
+    <main>
+      <h1 class="overskrift_rema">REMA</h1>
+      <div class="knapper">
+        <a href="#hvidvin" class="button">Hvidvin</a>
+        <a href="#rødvin" class="button">Rødvin</a>
+        <a href="#rose" class="button">Rosé</a>
+      </div>
+      <div>
+        <p class="tilbage_til_vin">
+          <a href="find_din_vin.html">Tilbage til vin</a>
+        </p>
+      </div>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift">HVIDVIN</p>
+      </div>
+
+      <hr class="vin" />
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Santa Carolina Vistana Sauvignon Blanc</h5>
+        <p class="pris">Pris. 42,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Forholdsvis intens, mellemfyldig hvidvin med duft og smag af lime,
+            pære, passionsfrugt, krydderurter og lidt af saltlakrids.
+          </p>
+          <p>_</p>
+          <p>
+            Vinen er frisk og velegnet som aperitif, til gedeost, sushi, magre
+            fisk, muslinger eller grøntsagsretter.
+          </p>
+          <p>_</p>
+          <p>
+            Benyt gerne krydderurter, citrus eller vin i retten, der passer til
+            vinene aromaer og får vinen til at fornemmes blødere.
+          </p>
+        </div>
+        <img src="img/hvidvin1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Sandhills Sauvignon Blanc, Marlborough </h5>
+        <p class="pris">Pris. 72,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            En frisk hvidvin med god syre, så den opleves livlig og opløftende.
+            Frugtrig smag med æble og fersken i forgrunden.
+          </p>
+          <p>_</p>
+          <p>
+            Et strejf af honning, som giver et lille rundt sødlige touch – men
+            den overordnede stil er stadig relativt tør til halvtør.
+          </p>
+          <p>_</p>
+          <p>
+            Let krop med frisk syre, som gør vinen opløftende og behagelig. En
+            vis sødme til stede (resten af sukker), men den grænser ikke over i
+            noget tungt – balancen mellem sødme og syre gør den til en vin, der
+            både smager af frugt og er forfriskende.
+          </p>
+        </div>
+        <img src="img/Hvidvin2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">St. Michael Liebfraumilch, Nahe QbA</h5>
+        <p class="pris">Pris. 32,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Middel frisk og sød hvidvin. Duft og smag er af modne pærer og modne
+            druer.
+          </p>
+          <p>_</p>
+          <p>
+            Vinen er velegnet som sød aperitif. Vinen er drikkeklar og bør
+            serveres ved 8°C.
+          </p>
+          <p>_</p>
+        </div>
+        <img src="img/hvidvin4.png" alt="hvidvin" class="hvidvin4" />
+      </section>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift" id="rødvin">RØDVIN</p>
+      </div>
+
+      <hr class="vin" />
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Vinhuset Santa Carolina i Chile</h5>
+        <p class="pris">Pris. 58,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            En fyldig, krydret og frugtig rødvin, som optræder som en klassisk
+            cabernet. Vinen dufter blidt af solbær og vanilje, og med et lille
+            strejf af fadlagring på egetræ.
+          </p>
+          <p>_</p>
+          <p>
+            Smagen er flot struktureret med en god, moden frugt og med bløde
+            tanniner. En dejlig, kraftig rødvin der kan nydes til fx stegt
+            oksekød, lam eller dyrevildt med krydderurter.
+          </p>
+          <p>_</p>
+          <p>
+            Tilføj stegte rodfrugter eller andet sødmefyldt, som fremhæver
+            friskheden i vinen. Serveres ved 16-18 grader og kan sagtens ligge
+            et par år inden den nydes.
+          </p>
+        </div>
+        <img src="img/rødvin1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">That's Why Vino Rosso</h5>
+        <p class="pris">Pris. 49,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Mellemfyldig rødvin med duft og smag af røde kirsebær, mandler og
+            lidt af mælkeprodukter.
+          </p>
+          <p>_</p>
+          <p>
+            Friskheden er middel og vinen har et forholdsvis lavt tanninindhold.
+            Velegnet til pastaretter med tomatsauce, pizza eller lette retter
+            med lyst kød eller kylling.
+          </p>
+          <p>_</p>
+          <p>
+            Vinen skal nydes ung, vinder ikke ved lagring og bør serveres ved
+            16°C
+          </p>
+        </div>
+        <img src="img/rødvin2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Grande Alberone Rosso</h5>
+        <p class="pris">Pris. 62,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Fyldig og intens rødvin med let sødme. Duft og smag af modne og let
+            tørrede blommer, kirsebær og brombær samt af tørrede krydderier.
+          </p>
+          <p>_</p>
+          <p>
+            Friskheden er lidt lavere end middel niveau. Tanninindholdet er
+            lavt, så vinen fremstår meget blød. Velegnet til stegt svinekød,
+            and, gryderetter eller en burger.
+          </p>
+          <p>_</p>
+          <p>
+            Et sødmefuldt tilbehør vil trække friskhed frem i vinen og få mad og
+            vin til at harmonere. Vinen er drikkeklar og vinder ikke ved
+            yderligere lagring. Bør serveres ved 15°C
+          </p>
+        </div>
+        <img src="img/rødvin3.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift" id="rose">ROSE`</p>
+      </div>
+
+      <hr class="vin" />
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Altamar rosé</h5>
+        <p class="pris">Pris. 43,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Laksefarvet, tør og forholdsvis let rosévin med duft og smag af
+            hindbær, jordbær, citron og lakrids.
+          </p>
+          <p>_</p>
+          <p>
+            Der er god friskhed i vinen, der er bredt anvendeligt som aperitif,
+            til tapas, sushi, magre fisk eller salater og grøntsagsretter.
+          </p>
+          <p>_</p>
+          <p>
+            Benyt gerne citrus i retten eller dressingen, der vil stå godt til
+            vinens aromaer og som vil give en fornemmelse af øget fylde i vinen.
+          </p>
+        </div>
+        <img src="img/rose1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Le Bon Negociant rosé</h5>
+        <p class="pris">Pris. 69,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Tør, mellemfyldig og lys laksefarvet rosévin med duft og smag af
+            hindbær, jordbær, citron og lidt fersken.
+          </p>
+          <p>_</p>
+          <p>
+            Vinen er frisk og bredt anvendelig til fisk og skaldyr, krydret mad,
+            grønt og salater eller som et glas i utide.
+          </p>
+          <p>_</p>
+          <p>
+            Benyt gerne citronsaft i retten, der støtter op om vinens aroma og
+            får vinen til at fornemmes fyldigere. Vinen er drikkeklar og bør
+            drikkes ung.
+          </p>
+        </div>
+        <img src="img/rose2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Charline Rosé </h5>
+        <p class="pris">Pris. 66,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Frisk, mellemfyldig og lys rosévin med duft og smag af jordbær,
+            hindbær, vandmelon og citron.
+          </p>
+          <p>_</p>
+          <p>
+            Vinen er bredt anvendeligt til grønt og salater, fisk og skaldyr,
+            tapas, fjerkræ eller som aperitif.
+          </p>
+          <p>_</p>
+          <p>
+            Benyt gerne citron i retten, der står godt til vinens aromaer og som
+            vil øge fornemmelsen af fylde i vinen. Vinen er drikkeklar og bør
+            drikkes ung ved 7°C
+          </p>
+        </div>
+        <img src="img/rose3.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="navn_footer">DIN DRUE</div>
+        <div class="virksomhed">VIRKSOMHED</div>
+        <div class="hjælp">HJÆLP</div>
+        <div class="tekst_footer">
+          Din drue er både til dig, som gerne vil nyde et godt glas vin eller
+          bare få en hurtig skid på før, du rammer floor. Her finder du
+          anbefalinger og information om diverse vin i Rema og Netto.
+        </div>
+        <div class="liste1">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>About</li>
+            <li>Features</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div class="liste2">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>Costumer support</li>
+            <li>Delivery details</li>
+            <li>Terms and conditions</li>
+            <li>Privacy politics</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

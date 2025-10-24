@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din drue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="favicon_io (1)/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="forside_baggrund">
+    <header>
+      <div class="hoved">
+        <div class="menu-btn" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="overskrift">
+          <h1><a href="index.html"> DIN DRUE</a></h1>
+        </div>
+        <div class="about">
+          <p><a href="about.html"> About</a></p>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Forside</a>
+        <a href="find_din_vin.html">Find din vin</a>
+        <a href="about.html">Om os</a>
+        <a href="vin_til_warm.html">Vin til warm</a>
+        <a href="netto.html">Netto</a>
+        <a href="rema.html">Rema</a>
+      </nav>
+    </header>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <main>
+      <section class="sektion1">
+        <div class="h2_forside"></div>
+      </section>
+    </main>
+
+    <section>
+      <div>
+        <h3 class="sektion2">
+          <a href="find_din_vin.html">FIND DIN VIN</a>
+        </h3>
+        <hr class="findvin-linje" />
+      </div>
+      <div class="vin_til_warm_forside">
+        <a href="vin_til_warm.html">VIN TIL WARM?</a>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer">
+        <div class="navn_footer">DIN DRUE</div>
+        <div class="virksomhed">VIRKSOMHED</div>
+        <div class="hjælp">HJÆLP</div>
+        <div class="tekst_footer">
+          Din drue er både til dig, som gerne vil nyde et godt glas vin eller
+          bare få en hurtig skid på før, du rammer floor. Her finder du
+          anbefalinger og information om diverse vin i Rema og Netto.
+        </div>
+        <div class="liste1">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>About</li>
+            <li>Features</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div class="liste2">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>Costumer support</li>
+            <li>Delivery details</li>
+            <li>Terms and conditions</li>
+            <li>Privacy politics</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

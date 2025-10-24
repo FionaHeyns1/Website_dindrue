@@ -1,0 +1,424 @@
+@media (width>=500px) {
+  h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+  h1 a:hover {
+    color: rgb(163, 14, 14);
+  }
+
+  p a {
+    color: inherit;
+    text-decoration: none;
+  }
+  p a:hover {
+    color: rgb(175, 7, 7);
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: rgb(114, 11, 11);
+    padding: 8px 0;
+  }
+
+  .mobile-menu a:hover {
+    color: rgb(172, 1, 1);
+  }
+
+  /* Vis menuen når aktiv */
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  /* Her starter koden til "about" siden */
+
+  .underoverskrift_about {
+    color: rgb(28, 6, 4);
+    grid-column: 1 / 5;
+    grid-row: 1; /* samme række som billedet */
+    align-self: center;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 3em;
+  }
+
+  .about_p1 {
+    padding: 3em;
+    color: rgb(28, 6, 4);
+    grid-column: 1/3;
+    line-height: 1.5;
+  }
+
+  .about_p2 {
+    padding: 3em;
+    color: rgb(28, 6, 4);
+    grid-column: 3/5;
+    line-height: 1.5;
+  }
+  .about_p3 {
+    grid-column: 5 / 7; /* placerer billedet i grid */
+    max-width: 100%; /* billedet bliver aldrig bredere end kolonnen */
+    height: auto; /* holder proportionerne */
+    display: block; /* fjerner inline mellemrum under billedet */
+    margin-right: 2em;
+  }
+
+  .sort_hvid_vin {
+    grid-column: 5 / 7; /* placerer billedet i grid */
+    max-width: 100%; /* billedet bliver aldrig bredere end kolonnen */
+    height: auto; /* holder proportionerne */
+    display: block;
+    padding: 1em;
+  }
+
+  .aboutside_grid1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 1em;
+    background-color: rgb(249, 236, 176);
+    margin-left: 8em;
+    max-width: 1200px; /* gør boksen smallere end hele skærmen */
+    width: 90%; /* responsivt – fylder 90% af skærmbredden */
+    border-radius: 10px;
+  }
+
+  .about_baggrund {
+    margin: 0; /* fjerner default margin */
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(44, 9, 6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .bg1 {
+    background: url("img/druer_baggrund.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    );
+  }
+
+  /* Her starter koden til "find din vin" siden */
+
+  .dinvin_baggrund {
+    margin: 0; /* fjerner default margin */
+    padding: 0;
+    background-color: rgb(44, 9, 6);
+    background-size: cover; /* fylder hele skærmen */
+    background-repeat: no-repeat; /* undgå gentagelser */
+    background-position: center; /* centrer billedet */
+    height: 100vh; /* sikrer at body fylder hele skærmen */
+  }
+
+  .tekts1_finvin {
+    text-align: center;
+  }
+
+  .grid_1findinvin {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2rem;
+    margin-top: 5em;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .indhold_dinvin {
+    margin-top: 1em;
+    background-color: rgb(249, 236, 176);
+    margin-left: 8em;
+    max-width: 1200px; /* gør boksen smallere end hele skærmen */
+    width: 90%; /* responsivt – fylder 90% af skærmbredden */
+    border-radius: 10px;
+    margin-top: 8em;
+    margin-bottom: 15em;
+  }
+
+  .h2_dinvin {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 2em;
+    color: rgb(28, 6, 4);
+  }
+
+  .p1_dinvin {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .netto_box {
+    grid-column: 2 / 5;
+    font-size: 5em;
+    margin-bottom: 1em;
+    color: inherit; /* arver farven fra h3 */
+    text-decoration: none;
+  }
+
+  .rema_box {
+    grid-column: 5 / 8;
+    font-size: 5em;
+    margin-bottom: 1em;
+    color: inherit; /* arver farven fra h3 */
+    text-decoration: none;
+  }
+
+  .grid_1findinvin img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+  }
+
+  /* Her starter koden til netto siden */
+
+  .netto_baggrund {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(44, 9, 6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .overskrift_netto {
+    text-align: center;
+    margin-top: 2em;
+    color: gold;
+    margin-right: 0.5em;
+    font-size: 4em;
+  }
+
+  .knapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 5em;
+    margin-right: 4em;
+  }
+
+  .button {
+    font-family: "Old Standard TT", serif;
+    background-color: #f3f0ed; /* Lys grå/hvidlig */
+    color: #000;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 10px; /* Afrundede hjørner */
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(116, 9, 9, 0.274);
+    transition: background-color 0.1s ease;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #ffffffea; /* Lidt mørkere ved hover */
+  }
+
+  .tilbage_til_vin {
+    text-align: left;
+    font-family: "Old Standard TT", serif;
+    margin-left: 3em;
+    margin-top: 1em;
+  }
+
+  .tilbage_til_vin a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .vin {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 90%;
+    margin: 2px auto 40px;
+    margin-top: 3em;
+  }
+
+  .vin_overskrift {
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    padding: 0.5em;
+  }
+
+  .vinflasker_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .pris {
+    grid-column: 5/7;
+    color: white;
+    margin-top: 5em;
+    margin-left: 9em;
+  }
+
+  .vin_navn {
+    color: white;
+    margin-left: 1.5em;
+    font-size: 3em;
+    font-family: "Old Standard TT", serif;
+    margin-top: 2em;
+    grid-column: 1/5;
+  }
+  .gennemsigtig-boks {
+    margin-left: 4em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.3
+    ); /* hvid med 50% gennemsigtighed */
+    padding: 60px 30px; /* giver luft inde i boksen */
+    border-radius: 40px; /* afrundede hjørner */
+    max-width: 600px; /* maks bredde */
+    text-align: center; /* centrerer teksten */
+    color: rgb(255, 255, 255); /* tekstfarve */
+    backdrop-filter: blur(5px); /* valgfrit: slører baggrunden let */
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+
+  .hvidvin1 {
+    grid-column: 5/7;
+    max-width: 100%;
+    display: block;
+    grid-row: 2/3;
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+
+  .hvidvin3 {
+    grid-column: 5/7;
+    max-width: 100%;
+    display: block;
+    grid-row: 2/3;
+    margin-top: 5em;
+    margin-left: 7.5em;
+    margin-bottom: 2em;
+  }
+
+  .hvidvin4 {
+    grid-column: 5/7;
+    max-width: 100%;
+    display: block;
+    grid-row: 2/3;
+    margin-top: 5em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+  }
+
+  /* Her starter koden til rema siden */
+
+  .rema_baggrund {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(44, 9, 6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .overskrift_rema {
+    text-align: center;
+    font-size: 4em;
+    color: rgb(100, 132, 226);
+    margin-top: 2em;
+    margin-right: 0.5em;
+  }
+
+  /* Skrift typer */
+
+  .old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Vin til warm layout */
+
+  .mainwarm {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-left: 10em;
+    margin-top: 10em;
+    margin-bottom: 25em;
+  }
+
+  .overskrift_warm {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .vin_til_warm {
+    background-color: rgb(44, 9, 6);
+  }
+
+  .tekst_warm {
+    color: #000000;
+    line-height: 2em;
+    grid-column: 1/5;
+    background-color: rgb(249, 236, 176);
+    max-width: 1800px; /* gør boksen smallere end hele skærmen */
+    width: 95%; /* responsivt – fylder 90% af skærmbredden */
+    border-radius: 10px;
+    padding: 2em;
+  }
+
+  .tekstwarm1 {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .tekstwarm2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .kungfu_img {
+    grid-column: 5/8;
+    max-width: 200%;
+    height: auto;
+    display: block;
+    margin-right: 20em;
+  }
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Din drue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="favicon_io (1)/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="netto_baggrund">
+    <header>
+      <div class="hoved">
+        <div class="menu-btn" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="overskrift">
+          <h1><a href="index.html"> DIN DRUE</a></h1>
+        </div>
+        <div class="about">
+          <p><a href="about.html"> About</a></p>
+        </div>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Forside</a>
+        <a href="find_din_vin.html">Find din vin</a>
+        <a href="about.html">Om os</a>
+        <a href="vin_til_warm.html">Vin til warm</a>
+        <a href="netto.html">Netto</a>
+        <a href="rema.html">Rema</a>
+      </nav>
+
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("mobileMenu");
+          menu.classList.toggle("show");
+        }
+      </script>
+    </header>
+
+    <main>
+      <h1 class="overskrift_netto">NETTO</h1>
+      <div class="knapper">
+        <a href="#hvidvin" class="button">Hvidvin</a>
+        <a href="#rødvin" class="button">Rødvin</a>
+        <a href="#rose" class="button">Rosé</a>
+      </div>
+      <div>
+        <p class="tilbage_til_vin">
+          <a href="find_din_vin.html">Tilbage til vin</a>
+        </p>
+      </div>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift" id="hvidvin">HVIDVIN</p>
+      </div>
+
+      <hr class="vin" />
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Montgras Organic Sauvignon Blanc</h5>
+        <p class="pris">Pris. 59,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Meget frisk og syrlig vin – syren er klar og opløftende, hvilket gør
+            vinen let og forfriskende at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Der er en “juicy” mundfornemmelse – altså ikke vandet, men med en
+            fin frugtighed som gør den behagelig nem at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Smagsprofilen følger aromaen: citrusfrugter (lime, grapefrugt),
+            nogle tropiske hints i nogle årgange, og afsluttende noter af grøn
+            urt eller urtelighed.
+          </p>
+        </div>
+        <img src="img/hvidvin1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Soul Wine Riesling</h5>
+        <p class="pris">Pris. 50,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            En frisk hvidvin med god syre, så den opleves livlig og opløftende.
+            Frugtrig smag med æble og fersken i forgrunden.
+          </p>
+          <p>_</p>
+          <p>
+            Et strejf af honning, som giver et lille rundt sødlige touch – men
+            den overordnede stil er stadig relativt tør til halvtør.
+          </p>
+          <p>_</p>
+          <p>
+            Let krop med frisk syre, som gør vinen opløftende og behagelig. En
+            vis sødme til stede (resten af sukker), men den grænser ikke over i
+            noget tungt – balancen mellem sødme og syre gør den til en vin, der
+            både smager af frugt og er forfriskende.
+          </p>
+        </div>
+        <img src="img/Hvidvin2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Løgismose Husets Hvidvin</h5>
+        <p class="pris">Pris. 40,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Meget frisk og syrlig vin – syren er klar og opløftende, hvilket gør
+            vinen let og forfriskende at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Der er en “juicy” mundfornemmelse – altså ikke vandet, men med en
+            fin frugtighed som gør den behagelig nem at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Smagsprofilen følger aromaen: citrusfrugter (lime, grapefrugt),
+            nogle tropiske hints i nogle årgange, og afsluttende noter af grøn
+            urt eller urtelighed.
+          </p>
+        </div>
+        <img src="img/hvidvin3.png" alt="hvidvin" class="hvidvin3" />
+      </section>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift" id="rødvin">RØDVIN</p>
+      </div>
+
+      <hr class="vin" />
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Mucho Mas</h5>
+        <p class="pris">Pris. 50,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Vinen har mellem til fyldig krop og en vis struktur, men uden at
+            blive for tung.
+          </p>
+          <p>_</p>
+          <p>
+            Smagsnoter: mørk frugt (brombær, solbær, kirsebær), mineralitet,
+            støvede kakaotoner, chokolade, og lidt ceder/træ i eftersmagen.
+            Tanninerne er bløde og elegante snarere end skarpe; de bidrager med
+            struktur uden at dominere.
+          </p>
+          <p>_</p>
+          <p>
+            Eftersmagen er vedholdende og raffineret, med noter af mørk
+            chokolade, vanilje og ceder.
+          </p>
+        </div>
+        <img src="img/rødvin1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Chianti Nuova Generazione</h5>
+        <p class="pris">Pris. 59,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Fyldighed: medium til relativt fyldig vin. De “let indtørrede” druer
+            og sent høst bidrager med ekstra koncentreret frugt og krop.
+          </p>
+          <p>_</p>
+          <p>
+            Tanniner: modne og relativt bløde — ikke hårde, men tilstrækkeligt
+            strukturerede til at vinen har karakter.
+          </p>
+          <p>_</p>
+          <p>
+            Syre: frisk syre der hjælper med at give balance til den modne
+            frugt. Det gør vinen livlig og ikke for tung.
+          </p>
+        </div>
+        <img src="img/rødvin2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Côte du Rhône</h5>
+        <p class="pris">Pris. 65,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Syre: rimelig til god syre for at skabe friskhed og balance, så
+            vinen ikke bliver overvældende varm oprundet i alkohol eller frugt.
+          </p>
+          <p>_</p>
+          <p>
+            Smagsnoter: modne røde/sorte bær, krydrede elementer, måske lidt
+            mørk chokolade eller lakrids, især i sydlige Rhône vine.
+          </p>
+          <p>_</p>
+          <p>
+            Hvis der er lidt alder, kan der komme tørrede frugttoner, læder,
+            måske lidt ristet fad eller vanilje.
+          </p>
+        </div>
+        <img src="img/rødvin3.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <hr class="vin" />
+
+      <div>
+        <p class="vin_overskrift" id="rose">ROSE`</p>
+      </div>
+
+      <hr class="vin" />
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Reserva Early Harvest</h5>
+        <p class="pris">Pris. 45,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Ofte ret sød eller let sød (off-dry til sød), med en tydelig
+            restsødme.
+          </p>
+          <p>_</p>
+          <p>
+            Syre er moderat til lav, men vigtig for at give balance til sødmen,
+            så vinen ikke bliver for klæbrig. Let krop – ikke tung, ikke mange
+            tanniner
+          </p>
+          <p>_</p>
+          <p>
+            Smagsnoter på tungen matcher aromaerne: jordbær, hindbær, måske lidt
+            vandmelon eller melon; måske lidt citrus i eftersmag.
+          </p>
+        </div>
+        <img src="img/rose1.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Rosado Tempranillo</h5>
+        <p class="pris">Pris. 66,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Meget frisk og syrlig vin – syren er klar og opløftende, hvilket gør
+            vinen let og forfriskende at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Der er en “juicy” mundfornemmelse – altså ikke vandet, men med en
+            fin frugtighed som gør den behagelig nem at drikke.
+          </p>
+          <p>_</p>
+          <p>
+            Smagsprofilen følger aromaen: citrusfrugter (lime, grapefrugt),
+            nogle tropiske hints i nogle årgange, og afsluttende noter af grøn
+            urt eller urtelighed.
+          </p>
+        </div>
+        <img src="img/rose2.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+      <section class="vinflasker_grid">
+        <h5 class="vin_navn">Barefoot White Zinfandel</h5>
+        <p class="pris">Pris. 80,-</p>
+
+        <div class="gennemsigtig-boks">
+          <p>
+            Sødmeniveau: relativt sød (off-dry til sød), med tydeligt restsukker
+            der giver en “saftig” og frugtrig karakter.
+          </p>
+          <p>_</p>
+          <p>
+            Frugtsmagene følger dufterne: jordbær, fersken og pærer dominerer,
+            med et strejf af tropisk frugt (især ananas) i baggrunden.
+          </p>
+          <p>_</p>
+          <p>
+            Let krop, ikke tung – det er en vin der er mere for fornøjelsen end
+            for kompleksiteten. Mundfølelsen er blød.
+          </p>
+        </div>
+        <img src="img/rose3.png" alt="hvidvin" class="hvidvin1" />
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="navn_footer">DIN DRUE</div>
+        <div class="virksomhed">VIRKSOMHED</div>
+        <div class="hjælp">HJÆLP</div>
+        <div class="tekst_footer">
+          Din drue er både til dig, som gerne vil nyde et godt glas vin eller
+          bare få en hurtig skid på før, du rammer floor. Her finder du
+          anbefalinger og information om diverse vin i Rema og Netto.
+        </div>
+        <div class="liste1">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>About</li>
+            <li>Features</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div class="liste2">
+          <ul style="list-style-type: none; padding: 0; margin: 0">
+            <li>Costumer support</li>
+            <li>Delivery details</li>
+            <li>Terms and conditions</li>
+            <li>Privacy politics</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
